@@ -1,0 +1,15 @@
+.expired {
+    background-color: red;
+}
+
+.not-expired {
+    background-color: green;
+}
+
+.out-of-stock {
+    background-color: yellow;
+}
+
+.in-stock {
+    background-color: green;
+}

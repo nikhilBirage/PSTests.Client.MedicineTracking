@@ -8,6 +8,8 @@ import { MedicineListComponent } from './medicine-list/medicine-list.component';
 import { PageNotFoundComponent } from './page-not-found.component';
 import { ManageMedicineComponent } from './manage-medicine/manage-medicine.component';
 import { MedicineDetailsComponent } from './medicine-details/medicine-details.component';
+import { CommonModule } from '@angular/common';
+import { MedicineModule } from './medicine.module';
 
 const routes = [
   { path: 'medicines', component: MedicineListComponent },
@@ -20,14 +22,13 @@ const routes = [
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ManageMedicineComponent,
-    MedicineDetailsComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    HttpClientModule
+    HttpClientModule,
+    MedicineModule
   ],
   providers: [],
   bootstrap: [AppComponent]
